@@ -1,0 +1,12 @@
+# Wall times to collect 1 million samples for a 1D Bose-Hubbard lattice of size L=N=12 at U/t=3.3 & beta=16 in pigsfli
+# Uniform sampling (seconds)     Truncated Exponential sampling (seconds)
+5723.7     5747.37
+5660.19    5760.47
+5740.56    5848.61
+5615.88    5832.48
+5755.12    5671.14
+5718.25    5867.44 
+5816.29    5809.58
+5824.39    5861.17
+5712.26    5883.93
+5477.28    5908.28
