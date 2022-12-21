@@ -49,7 +49,8 @@ legend.frameon       : False   # whether or not to draw a frame around legend
 
 ### FIGURE
 # See http://matplotlib.org/api/figure_api.html#matplotlib.figure.Figure
-figure.figsize   : 4.63263, 2.86312    # figure size in inches
+#figure.figsize   : 4.63263, 2.86312    # figure size in inches
+figure.figsize    : 3.083, 1.905
 
 savefig.transparent :  True     # transparent figures
 savefig.dpi         : 72.27     # figure dots per inch
