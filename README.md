@@ -20,6 +20,9 @@ The creation of these materials was supported in part by the National Science Fo
 
 [<img width="100px" src="https://www.nsf.gov/images/logos/NSF_4-Color_bitmap_Logo.png">](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1553991)
 
+This work was supported by the Laboratory Directed Research and Development Early Career Research Funding of Los Alamos National Laboratory (LANL) under project number 20210662ECR. LANL is operated by Triad National Security, LLC, for the National Nuclear Security Administration of U.S. Department of Energy (Contract No.
+89233218CNA000001). A.~D. was supported by the U.S.  Department of Energy, Office of Science, Office of Basic Energy Sciences, under Award Number DE-SC0022311.
+
 ### Figures
 
 #### Figure 1: One dimensional truncated exponential distribution
