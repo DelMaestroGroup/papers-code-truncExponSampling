@@ -2,8 +2,6 @@
 
 Emanuel Casiano-Diaz, Kipton Barros, Ying Wai Li, Adrian Del Maestro
 
-[arXiv:XXXX.XXXXX]
-
 ### Abstract
  In Monte Carlo simulations, proposed configurations are accepted or rejected according to an acceptance ratio, which depends on an underlying probability distribution and an *a priori* sampling probability. By carefully selecting the probability distribution from which random variates are sampled,  simulations can be made more efficient, by virtue of an autocorrelation time reduction. In this paper, we illustrate how to directly sample random variates from a two dimensional truncated exponential distribution. We show that our direct sampling approach converges vaster to the target distribution as compared to rejection sampling. The direct sampling of one and two dimensional truncated exponential distributions is then applied to a recent Path Integral Monte Carlo (PIMC) algorithm for the simulation of Bose-Hubbard lattice models at zero temperature. The new sampling method results in improved acceptance ratios and reduced autocorrelation times of estimators without any wall clock run time increase, providing an effective speed up of the simulation.
 
@@ -18,12 +16,9 @@ The figures in this project were generated from the data files in the [processed
 The raw data for Figures 6,7,8 was generated via a new path integral Monte Carlo algorithm for the ground state of bosonic lattice models: [pigsfli](https://github.com/DelMaestroGroup/pigsfli).
 
 ### Support
-The creation of these materials was supported in part by the National Science Foundation under Award Nos. [DMR-1553991](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1553991&HistoricalAwards=false) and [DMR-2041995](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2041995&HistoricalAwards=false).
-
-[<img width="100px" src="https://www.nsf.gov/images/logos/NSF_4-Color_bitmap_Logo.png">](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1553991)
 
 This work was supported by the Laboratory Directed Research and Development Early Career Research Funding of Los Alamos National Laboratory (LANL) under project number 20210662ECR. LANL is operated by Triad National Security, LLC, for the National Nuclear Security Administration of U.S. Department of Energy (Contract No.
-89233218CNA000001). A.~D. was supported by the U.S.  Department of Energy, Office of Science, Office of Basic Energy Sciences, under Award Number DE-SC0022311.
+89233218CNA000001). A.~D. was supported by the U.S.  Department of Energy, Office of Science, Office of Basic Energy Sciences, under Award Number [DE-SC0022311](https://pamspublic.science.energy.gov/WebPAMSExternal/Interface/Common/ViewPublicAbstract.aspx?rv=31bd2b59-7a7a-424c-83cc-fad4b3df485f&rtc=24&PRoleId=10).
 
 ### Figures
 
