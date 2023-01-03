@@ -11,10 +11,9 @@ This repository includes links, code, scripts, and data to generate the plots in
 
 ### Requirements
 
-The data for Figures 6,7,8 was generated via a new path integral Monte Carlo algorithm for the ground state of bosonic lattice models: [pigsfli](https://github.com/DelMaestroGroup/pigsfli).
+The figures in this project were generated from the data files in the [processed_data](https://github.com/DelMaestroGroup/papers-code-truncExponSampling/tree/master/processed_data) directory of this repository with the various `.py` scripts found in the [src](https://github.com/DelMaestroGroup/papers-code-truncExponSampling/tree/master/src) directory. Figures were generated using the `.ipynb` notebook files contained there.
 
-The data contained in the [processed_data](https://github.com/DelMaestroGroup/papers-code-truncExponSampling/tree/master/processed_data)
-directory of this repository was obtained by processing raw data [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6827186.svg)](https://doi.org/10.5281/zenodo.6827186) with the various `.py` scripts found in the [src](https://github.com/DelMaestroGroup/papers-code-latticepigs/tree/main/src) directory. Figures were generated using the `.ipynb` notebook files contained there.
+The raw data for Figures 6,7,8 was generated via a new path integral Monte Carlo algorithm for the ground state of bosonic lattice models: [pigsfli](https://github.com/DelMaestroGroup/pigsfli).
 
 ### Support
 The creation of these materials was supported in part by the National Science Foundation under Award Nos. [DMR-1553991](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1553991&HistoricalAwards=false) and [DMR-2041995](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2041995&HistoricalAwards=false).
