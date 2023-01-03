@@ -18,7 +18,7 @@ The raw data for Figures 6,7,8 was generated via a new path integral Monte Carlo
 ### Support
 
 This work was supported by the Laboratory Directed Research and Development Early Career Research Funding of Los Alamos National Laboratory (LANL) under project number 20210662ECR. LANL is operated by Triad National Security, LLC, for the National Nuclear Security Administration of U.S. Department of Energy (Contract No.
-89233218CNA000001). A.~D. was supported by the U.S.  Department of Energy, Office of Science, Office of Basic Energy Sciences, under Award Number [DE-SC0022311](https://pamspublic.science.energy.gov/WebPAMSExternal/Interface/Common/ViewPublicAbstract.aspx?rv=31bd2b59-7a7a-424c-83cc-fad4b3df485f&rtc=24&PRoleId=10).
+89233218CNA000001). A.D. was supported by the U.S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Award Number [DE-SC0022311](https://pamspublic.science.energy.gov/WebPAMSExternal/Interface/Common/ViewPublicAbstract.aspx?rv=31bd2b59-7a7a-424c-83cc-fad4b3df485f&rtc=24&PRoleId=10).
 
 ### Figures
 
