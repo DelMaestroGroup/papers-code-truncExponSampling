@@ -1,3 +1,5 @@
+[![Paper](https://img.shields.io/badge/paper-arXiv%3A2207.11301-B31B1B.svg)](https://github.com/DelMaestroGroup/papers-code-truncExponSampling)
+
 #  Reduction of Autocorrelation Times in Lattice Path Integral Quantum Monte Carlo via Direct Sampling of the Truncated Exponential Distribution
 
 Emanuel Casiano-Diaz, Kipton Barros, Ying Wai Li, Adrian Del Maestro
