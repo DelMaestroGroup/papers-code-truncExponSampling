@@ -10,9 +10,11 @@ Emanuel Casiano-Diaz, Kipton Barros, Ying Wai Li, Adrian Del Maestro
 This repository includes links, code, scripts, and data to generate the plots in the above paper.
 
 ### Requirements
-The data in this project was generated via a new path integral Monte Carlo algorithm for the ground state of bosonic lattice models: [pigsfli](https://github.com/DelMaestroGroup/pigsfli).
 
-The data contained in the [ProcessedData](https://github.com/DelMaestroGroup/papers-code-latticepigs/tree/main/ProcessedData) directory of this repository was obtained by processing raw data [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6827186.svg)](https://doi.org/10.5281/zenodo.6827186) with the various `.py` scripts found in the [src](https://github.com/DelMaestroGroup/papers-code-latticepigs/tree/main/src) directory. Figures were generated using the `.ipynb` notebook files contained there.
+The data for Figures 6,7,8 was generated via a new path integral Monte Carlo algorithm for the ground state of bosonic lattice models: [pigsfli](https://github.com/DelMaestroGroup/pigsfli).
+
+The data contained in the [processed_data](https://github.com/DelMaestroGroup/papers-code-truncExponSampling/tree/master/processed_data)
+directory of this repository was obtained by processing raw data [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6827186.svg)](https://doi.org/10.5281/zenodo.6827186) with the various `.py` scripts found in the [src](https://github.com/DelMaestroGroup/papers-code-latticepigs/tree/main/src) directory. Figures were generated using the `.ipynb` notebook files contained there.
 
 ### Support
 The creation of these materials was supported in part by the National Science Foundation under Award Nos. [DMR-1553991](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1553991&HistoricalAwards=false) and [DMR-2041995](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2041995&HistoricalAwards=false).
