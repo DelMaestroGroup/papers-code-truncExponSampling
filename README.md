@@ -43,7 +43,7 @@ This work was supported by the Laboratory Directed Research and Development Earl
 #### Figure 7: Projection length dependence of integrated autocorrelation time
 <img src="https://github.com/DelMaestroGroup/papers-code-truncExponSampling/blob/master/figures/pigsfli_tau_vs_beta_critical.svg" width="400px">
 
-#### Figure 8: Comparison of wall clock times in rejection and direct sampling
+#### Figure 8: Comparison of PIMC wall clock times with rejection and direct sampling
 <img src="https://github.com/DelMaestroGroup/papers-code-truncExponSampling/blob/master/figures/wall_times.svg" width="400px">
 
 Figures are relesed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) and can be freely copied, redistributed and remixed.
