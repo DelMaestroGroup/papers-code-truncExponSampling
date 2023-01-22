@@ -43,28 +43,26 @@ double infer_tau1(double tau_old,double a, double b, double c,
     integrating tau2 dependence from joint truncated exponential distribution
     P(tau1,tau2). Constraint: a < tau1 < tau2 < b */
 
-    double y,Z,P,arg,atol,tau,A,x;
+    double u,Z,P,arg,atol,tau,B,y,tau_wm1,tau_w0;
 
     boost::random::uniform_real_distribution<double> rnum(0.0,1.0);
-    x = rnum(rng);
+    y = rnum(rng);
 
     // Compute normalization of truncated exponential dist.
-    Z = (1/c) * (exp(c*(b-a)) - 1) - (b - a);
-    
-    //
-    y = Z*x - (1/c)*exp(c*(b-a)) - a;
-
-    //
-    A = -(1/c)*exp(c*b);
+    Z = (1/(c*c)) * (exp(-c*(b-a)) - 1) + (1/c) * (b - a);
+    B = -exp(-c*b);
+    u = y*c*c*Z + B*exp(c*a) + c*a;
 
     // Determine LambertW branch & compute tau
-    arg = max(-1/exp(1), A*c*exp(c*y));
+    // arg = max(-1/exp(1), A*c*exp(c*y));
+    arg = max(-1/exp(1), B*exp(u));
+    arg = B*exp(u);
     // cout << -1/exp(1) << " " << A*c*exp(c*y) << endl;
-    if (c < 0){ // k = 0 branch
-        tau = (1/c)*lambert_w0(arg)-y;
+    if (c > 0){ // k = 0 branch
+        tau = (1/c)*(u-lambert_w0(arg));
     }
     else {      // k = -1 branch
-        tau = (1/c)*lambert_wm1(arg)-y;
+        tau = (1/c)*(u-lambert_wm1(arg));
     }
 
     // Check with specific x values
@@ -97,13 +95,14 @@ double infer_tau1_with_rejection(double tau_old,double a, double b, double c,
     tau_new = a + x1*(b-a);
 
     // Compute normalization of marginalized distribution P(x1)
-    Z = (1/(c*c))*(exp(c*(b-a))-c*(b-a)-a);
+    Z = (1/(c*c)) * (exp(-c*(b-a)) - 1) + (1/c) * (b - a);
 
     // Compute marginalized probability density P(x1)
-    P = (1/(c*Z))*(exp(c*(b-tau_new))-1);
+    P = (1/(c*Z))*(1-exp(-c*(b-tau_new)));
     
     // Get maximum value of distribution (to rescale uniform dist.)
-    Pmax = (1/(c*Z))*(exp(c*(b-a))-1);
+    // Pmax = (1/(c*Z))*(exp(c*(b-a))-1);
+    Pmax = (1/(c*Z))*(1-exp(-c*(b-a)));
 
     // Rescaled uniform number
     u = x2*Pmax;
@@ -190,16 +189,16 @@ double infer_tau2_with_rejection(double tau_old,
     tau_new = a + x1*(b-a);
 
     // Compute normalization constant
-    Z = (exp(c*(b-a))-1)/c;
+    Z = (1-exp(-c*(b-a)))/c;
 
     // Compute probability density
-    P = (1/Z)*exp(c*(tau_new-a));
+    P = (1/Z)*exp(-c*(tau_new-a));
 
     // Get maximum value of truncexpon (to rescale uniform dist.)
-    if(c<0)
+    if(c>0)
         Pmax = (1/Z);
     else
-        Pmax = (1/Z)*exp(c*(b-a));
+        Pmax = (1/Z)*exp(-c*(b-a));
     // the conditions above are ok. I checked them for simple truncexpon.
 
     // Rescaled uniform number
@@ -338,8 +337,8 @@ double infer_tau2(double tau_old,
     /* ---- */
     // Sample the new time of the worm end from truncated exponential dist.
     /*:::::::::::::::::::: Truncated Exponential RVS :::::::::::::::::::::::::*/
-    Z = (exp(c*(b-a))-1)/c;
-    tau = a + log(Z*x*c+1)  / c;
+    Z = (1-exp(-c*(b-a)))/c;
+    tau = a - log(1-Z*x*c)  / c;
     // cout << Z << endl;
     /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
@@ -385,7 +384,7 @@ int main(int argc, char** argv){
     // set parameters
     a = 0.1;  // lower bound
     b = 1.5;  // upper bound
-    c = -2.0; // exponential decay
+    c = 2.0; // exponential decay
 
     // Part I: Sampling from simple (1d) truncated exponential distribution
 
